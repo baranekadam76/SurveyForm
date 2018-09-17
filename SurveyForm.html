@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--Wireframe link: https://wireframe.cc/AAbdCI-->
+	<!--Responsive Method: CSS Grid-->
+
+	<!--
+		1. Find a project/goal: Done
+		2. design the application/site: Done
+		3. build the HTML: 
+		4. apply responsive design: 
+		5. apply CSS: 
+		6. refine the responsive design: 
+		7. refine accessibility guidelines: 
+		8. GitHub: Done
+	-->
+
 	<title>Survey Form</title>
 	<link rel="stylesheet" type="text/css" href="SurveyFormStyles.css">
 </head>
 <body>
 
+	<h1 id="title"></h1>
+
+<main>
+
+	<p id="description"></p>
+
+	<form id="survey-form">
+		
+		<div id="name-label">Enter name here required text:</div>
+		<div><input type="text" name="name" placeholder="Enter your name" required id="name"></div>
+
+		<div id="email-label">Enter email address here required text:</div>
+		<div><input type="email" name="email" placeholder="Enter you email address" required id="email"></div>
+
+		<div id="number-label">Enter your age here text:</div>
+		<div><input type="number" name="number" placeholder="Enter your age" min="15" max="60" id="number"></div>
+
+
+
+
+		<input type="submit" name="submit">
+
+	</form>
 	
+</main>
 
 </body>
 </html>
