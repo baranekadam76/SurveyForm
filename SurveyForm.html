@@ -7,7 +7,7 @@
 	<!--
 		1. Find a project/goal: Done
 		2. design the application/site: Done
-		3. build the HTML: 
+		3. build the HTML: Done
 		4. apply responsive design: 
 		5. apply CSS: 
 		6. refine the responsive design: 
@@ -20,27 +20,65 @@
 </head>
 <body>
 
-	<h1 id="title"></h1>
+	<h1 id="title">Hearthstone Survey</h1>
 
 <main>
 
-	<p id="description"></p>
+	<p id="description">A few questions from a curious Hearthstone player</p>
 
 	<form id="survey-form">
 		
-		<div id="name-label">Enter name here required text:</div>
-		<div><input type="text" name="name" placeholder="Enter your name" required id="name"></div>
+		<div id="name-label">Name:</div>
+		<div><input type="text" name="name" placeholder="Enter your name" required id="name" size="20"></div>
 
-		<div id="email-label">Enter email address here required text:</div>
+		<div id="email-label">Email:</div>
 		<div><input type="email" name="email" placeholder="Enter you email address" required id="email"></div>
 
-		<div id="number-label">Enter your age here text:</div>
-		<div><input type="number" name="number" placeholder="Enter your age" min="15" max="60" id="number"></div>
+		<div id="number-label">Age:</div>
+		<div><input type="number" name="number" placeholder="Age" min="15" max="60" id="number"></div>
 
+		<div>Gender:</div>
+		<div>
+		<select id="dropdown">
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+		</select>
+		</div>
 
+		<div>Favorite Hearthstone Class:</div>
+		<div>
+			<fieldset>
+				<legend>Choose One</legend>
+				<label><input type="radio" name="class" value="Druid">Druid</label>
+				<label><input type="radio" name="class" value="Hunter">Hunter</label>
+				<label><input type="radio" name="class" value="Mage">Mage</label>
+				<label><input type="radio" name="class" value="Paladin">Paladin</label>
+				<label><input type="radio" name="class" value="Priest">Priest</label>
+				<label><input type="radio" name="class" value="Rogue">Rogue</label>
+				<label><input type="radio" name="class" value="Shaman">Shaman</label>
+				<label><input type="radio" name="class" value="Warlock">Warlock</label>
+				<label><input type="radio" name="class" value="Warrior">Warrior</label>
+			</fieldset>
+		</div>
 
+		<div>What game modes do you prefer to play?</div>
+		<div>
+			<fieldset>
+				<legend>Check all that Apply</legend>
+				<label><input type="checkbox" name="game" value="Boom Labs">Boom Labs</label>
+				<label><input type="checkbox" name="game" value="Monster Hunt">Monster Hunt</label>
+				<label><input type="checkbox" name="game" value="Dungeon Run">Dungeon Run</label>
+				<label><input type="checkbox" name="game" value="Tavern Brawl">Tavern Brawl</label>
+				<label><input type="checkbox" name="game" value="Ranked">Ranked</label>
+				<label><input type="checkbox" name="game" value="Casual">Casual</label>
+				<label><input type="checkbox" name="game" value="Arena">Arena</label>
+			</fieldset>
+		</div>
 
-		<input type="submit" name="submit">
+		<div>Why do you enjoy playing Hearthstone?</div>
+		<div><textarea name="comments" rows="5" cols="50" placeholder="Type your comments here"></textarea></div>
+
+		<input type="submit" name="submit" id="submit">
 
 	</form>
 	
