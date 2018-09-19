@@ -28,16 +28,16 @@
 
 	<form id="survey-form">
 		
-		<div id="name-label">Name:</div>
+		<div id="name-label" class="label">Name:</div>
 		<div><input type="text" name="name" placeholder="Enter your name" required id="name" size="20"></div>
 
-		<div id="email-label">Email:</div>
+		<div id="email-label" class="label">Email:</div>
 		<div><input type="email" name="email" placeholder="Enter you email address" required id="email"></div>
 
-		<div id="number-label">Age:</div>
+		<div id="number-label" class="label">Age:</div>
 		<div><input type="number" name="number" placeholder="Age" min="15" max="60" id="number"></div>
 
-		<div>Gender:</div>
+		<div class="label">Gender:</div>
 		<div>
 		<select id="dropdown">
 			<option value="Male">Male</option>
@@ -45,37 +45,37 @@
 		</select>
 		</div>
 
-		<div>Favorite Hearthstone Class:</div>
+		<div class="label">Favorite Hearthstone Class:</div>
 		<div>
-			<fieldset>
+			<fieldset id="class-grid">
 				<legend>Choose One</legend>
 				<label><input type="radio" name="class" value="Druid">Druid</label>
 				<label><input type="radio" name="class" value="Hunter">Hunter</label>
-				<label><input type="radio" name="class" value="Mage">Mage</label>
+				<label><input type="radio" name="class" value="Mage">Mage</label> <br>
 				<label><input type="radio" name="class" value="Paladin">Paladin</label>
 				<label><input type="radio" name="class" value="Priest">Priest</label>
-				<label><input type="radio" name="class" value="Rogue">Rogue</label>
+				<label><input type="radio" name="class" value="Rogue">Rogue</label> <br>
 				<label><input type="radio" name="class" value="Shaman">Shaman</label>
 				<label><input type="radio" name="class" value="Warlock">Warlock</label>
 				<label><input type="radio" name="class" value="Warrior">Warrior</label>
 			</fieldset>
 		</div>
 
-		<div>What game modes do you prefer to play?</div>
+		<div class="label">What game modes do you prefer to play?</div>
 		<div>
-			<fieldset>
+			<fieldset id="game-mode-grid">
 				<legend>Check all that Apply</legend>
 				<label><input type="checkbox" name="game" value="Boom Labs">Boom Labs</label>
-				<label><input type="checkbox" name="game" value="Monster Hunt">Monster Hunt</label>
+				<label><input type="checkbox" name="game" value="Monster Hunt">Monster Hunt</label> <br>
 				<label><input type="checkbox" name="game" value="Dungeon Run">Dungeon Run</label>
-				<label><input type="checkbox" name="game" value="Tavern Brawl">Tavern Brawl</label>
+				<label><input type="checkbox" name="game" value="Tavern Brawl">Tavern Brawl</label> <br>
 				<label><input type="checkbox" name="game" value="Ranked">Ranked</label>
 				<label><input type="checkbox" name="game" value="Casual">Casual</label>
 				<label><input type="checkbox" name="game" value="Arena">Arena</label>
 			</fieldset>
 		</div>
 
-		<div>Why do you enjoy playing Hearthstone?</div>
+		<div class="label">Why do you enjoy playing Hearthstone?</div>
 		<div><textarea name="comments" rows="5" cols="50" placeholder="Type your comments here"></textarea></div>
 
 		<input type="submit" name="submit" id="submit">
