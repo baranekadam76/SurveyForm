@@ -8,10 +8,10 @@
 		1. Find a project/goal: Done
 		2. design the application/site: Done
 		3. build the HTML: Done
-		4. apply responsive design: 
-		5. apply CSS: 
-		6. refine the responsive design: 
-		7. refine accessibility guidelines: 
+		4. apply responsive design: Half Done
+		5. apply CSS: Done
+		6. refine the responsive design: Not Done
+		7. refine accessibility guidelines: Done
 		8. GitHub: Done
 	-->
 
@@ -28,16 +28,16 @@
 
 	<form id="survey-form">
 		
-		<div id="name-label" class="label">Name:</div>
+		<label for="name" id="name-label">Name:</label>
 		<div><input type="text" name="name" placeholder="Enter your name" required id="name" size="20"></div>
 
-		<div id="email-label" class="label">Email:</div>
+		<label for="email" id="email-label">Email:</label>
 		<div><input type="email" name="email" placeholder="Enter you email address" required id="email"></div>
 
-		<div id="number-label" class="label">Age:</div>
+		<label for="number" id="number-label">Age:</label>
 		<div><input type="number" name="number" placeholder="Age" min="15" max="60" id="number"></div>
 
-		<div class="label">Gender:</div>
+		<label for="dropdown">Gender:</label>
 		<div>
 		<select id="dropdown">
 			<option value="Male">Male</option>
@@ -45,7 +45,7 @@
 		</select>
 		</div>
 
-		<div class="label">Favorite Hearthstone Class:</div>
+		<label for="class-grid">Favorite Hearthstone Class:</label>
 		<div>
 			<fieldset id="class-grid">
 				<legend>Choose One</legend>
@@ -61,7 +61,7 @@
 			</fieldset>
 		</div>
 
-		<div class="label">What game modes do you prefer to play?</div>
+		<label for="game-mode-grid">What game modes do you prefer to play?</label>
 		<div>
 			<fieldset id="game-mode-grid">
 				<legend>Check all that Apply</legend>
@@ -75,8 +75,8 @@
 			</fieldset>
 		</div>
 
-		<div class="label">Why do you enjoy playing Hearthstone?</div>
-		<div><textarea name="comments" rows="5" cols="50" placeholder="Type your comments here"></textarea></div>
+		<label for="comments">Why do you enjoy playing Hearthstone?</label>
+		<div><textarea name="comments" rows="5" cols="50" placeholder="Type your comments here" id="comments"></textarea></div>
 
 		<input type="submit" name="submit" id="submit">
 
